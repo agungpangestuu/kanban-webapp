@@ -188,7 +188,7 @@ export default {
   },
   methods: {
     createTask () {
-      this.$base.push(this.newTask)
+      this.$base.ref('task').push(this.newTask)
       this.newTask.title = ''
       this.newTask.descriptions = ''
       this.newTask.point = ''
